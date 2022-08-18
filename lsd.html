@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Psychedelic Tolerance Calculators</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="lsd.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lsd.html" class="active">LSD (Acid)</a></li>
+        <li><a href="psilocybin.html">Psilocybin (Shrooms)</a></li>
+        <li><a href="mdma.html">MDMA (Molly)</a></li>
+        <li><a href="marijuana.html">Marijuana (Weed)</a></li>
+    </ul>
+    <h1>LSD.</h1>
+    <br>
+    <p>NOTE: LSD tolerance is fully reset after around 12 days. This calculator only allows you to visualize the
+        tolerance if your last dose was within this period.</p>
+    <br>
+    <label for="last-dose"> Last Dose </label>
+    <br>
+    <input type="text" name="last-dose" id="last-dose" placeholder="Enter your last dose." />
+    <br>
+    <label for="desired-dose"> Desired Dose </label>
+    <br>
+    <input type="text" name="desired-dose" id="desired-dose" placeholder="Enter the desired dose." />
+    <br>
+    <label for="days-since"> Days since last dose. </label>
+    <br>
+    <input type="range" min="0" max="14" class="slider" name="days-since" id="days-since" />
+    <br>
+    <button onclick="calculate(); return false;">Calculate</button>
+    <br>
+    <div hidden class="results">
+        <h2>Tolerance Reset</h2>
+        <p id="result1"></p>
+        <h2>Same Dose</h2>
+        <p id="result2"></p>
+        <h2>Desired Dose</h2>
+        <p id="result3"></p>
+    </div>
+</body>
+
+</html>

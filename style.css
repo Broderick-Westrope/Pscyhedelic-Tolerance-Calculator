@@ -1,0 +1,70 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #00000033;
+    border-radius: 10px; */
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #5f43b2;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 170px;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: purple;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+}
+
+/* .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #04AA6D;
+    cursor: pointer;
+} */
+
+
+.active {
+    background-color: #3a3153;
+}
